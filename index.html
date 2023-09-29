@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons/css/all.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="main" >
+        <h3 class="header-info">
+        <a href="index.html"> Car Shop </a>
+        </h3>
+        <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Table
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#bmw">BMW</a>
+              <a href="#toyt">Toyota</a>
+                <a href="#hond">Honda</a>
+            </div>
+          </div>
+        <a href=>Price</a>
+        <a href="#about">About Us</a>
+        </nav>
+        </div>
+    </header>
+    
+    <div class="more">
+    <h1>Nice Cars</h1>
+    <p>Modern Cars</p>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="assets/bsilv.png"
+          width="100%" height="400px">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="assets/honda.png"
+          width="100%" height="400px">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="assets/to.jpeg"
+          width="100%" height="400px">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">{</a>
+        <a class="next" onclick="plusSlides(1)">}</a>
+        
+        </div>
+    </div>
+    <main>
+        <br>
+        <section id="products">
+        <h2 class="header">Our Products</h2>
+        <p class="header">Car, Made by People</p> <br>
+        <div class="items">
+            <div class="item">
+            <img src="assets/bmw.jpeg"
+            class="landscape" width="auto"
+            height="300px">
+            <h3>BMW car</h3>
+            <p>Very expensive</p>
+            <p>For driving</p>
+            </div>
+            <div class="item">
+                <img src="assets/to.jpeg"
+                class="landscape">
+                <h3>toyota car</h3>
+                <p>expensive</p>
+                <p>For driving</p>
+                </div>
+                <div class="item">
+                    <img src="assets/honda.png"
+                    class="landscape" width="auto"
+                    height="300px">
+                    <h3>honda car</h3>
+                    <p>expensive</p>
+                    <p>For driving</p>
+                </div>
+        </div>
+        <section id="table">
+            <table>
+                <h1>Cars</h1>
+                <tr>
+                    <th>Name</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+                <tr id="bmw">
+                    <td>BMW</td>
+                    <td>Blue, Silver, White</td>
+                    <td>RM500,000</td>
+                    <td>
+                        <img src="assets/bwhit.png" alt="Error"
+                        class="landscape" width="auto" height="300px">
+                    </td>
+                </tr>
+                <tr id="toyt">
+                    <td>Toyota</td>
+                    <td>Silver, Green, White</td>
+                    <td>RM350,000</td>
+                    <td>
+                        <img src="assets/to.jpeg" alt="Error"
+                        class="landscape" width="auto" height="300px">
+                    </td>
+                </tr>
+                <tr id="hond">
+                    <td>Honda</td>
+                    <td>Black, Green, Silver</td>
+                    <td>RM450,000</td>
+                    <td>
+                        <img src="assets/honda.png" alt="Error"
+                        class="landscape" width="auto" height="300px">
+                    </td>
+                </tr>
+            </table>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].className = slides[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                }
+                </script>
+        </section>
+        <section>
+            <div class="container">
+                <div class="tab">
+                <div class="tab-header">
+                <div>
+                <h1 class="name">Bronze</h1>
+                </div>
+                <div>
+                <h2 class="price"> Under RM500,000</h2>
+                </div>
+                </div>
+                <hr>
+                <ul class="list">
+                    <li>Car</li>
+                    <li> <del> Leather Seats </del> </li>
+                    <li> Warranty </li>
+                    <li> One color </li>
+                    <li> BMW </li>
+                    <li> Honda </li>
+                    <li> Toyota </li>
+                    <li> <del> Seat Warmer </del></li>
+                </ul>
+                <button>Order Now</button>
+                </div>
+                <div class="tab">
+                    <div class="tab-header">
+                    <div>
+                    <h1 class="name">Silver</h1>
+                    </div>
+                    <div>
+                    <h2 class="price"> Under RM750,000</h2>
+                    </div>
+                    </div>
+                    <hr>
+                    <ul class="list">
+                        <li>Car</li>
+                        <li> Leather Seats </li>
+                        <li> Warranty </li>
+                        <li> Two color </li>
+                        <li> BMW </li>
+                        <li> Honda </li>
+                        <li> Toyota </li>
+                        <li> <del> Seat Warmer </del></li>
+                    </ul>
+                    <button>Order Now</button>
+                    </div>
+                <div class="tab">
+                    <div class="tab-header">
+                    <div>
+                    <h1 class="name">Gold</h1>
+                    </div>
+                    <div>
+                    <h2 class="price"> Under RM1,000,000</h2>
+                    </div>
+                    </div>
+                    <hr>
+                    <ul class="list">
+                        <li>Car</li>
+                        <li> Leather Seats </li>
+                        <li> Warranty </li>
+                        <li> Three color </li>
+                        <li> BMW </li>
+                        <li> Honda </li>
+                        <li> Toyota </li>
+                        <li>Seat Warmer</li>
+                    </ul>
+                    <button>Order Now</button>
+                    </div>
+            </div>
+           </section>
+           <section id="about">
+            <div class="about">
+            <div>
+            <h2 class="about"> About Us </h2>
+            <p class="about"> Cars are built, then cars are sold</p>
+            </div>
+            <div class="image-about">
+            <img src="assets/car.jpg"
+            alt="About Us" width="450px"
+            height="auto" class="about-us">
+            </div>
+            </div>
+           </section>
+   </main>
+   <footer>
+        <div class="center-footer">
+            <div class="main-footer">
+                <div class="left-footer">
+                    <h3 class="info-left">
+                        <i class="fas fa-map"></i><b>Address</b>
+                    </h3>
+                    <p class="info-left"><i class="fas fa-map-pin"></i>
+                    Tukad Yeh Aya Street No. 45, Renon, Denpasar</p>
+                </div>
+                <div class="right-footer">
+                    <h3 class="info-right"> 
+                        <i class="fas fa-address-book"></i><b>Contacts
+                    </b></h3>
+                    <p class="info-right"><i class="fas fa-phone"></i>
+                    Phone: 087876667564</p>
+                    <p class="info-right">
+                    <i class="fab fa-instagram"></i>
+                    Instagram : @carshop</p>
+                </div>
+            </div>
+        
+            <div class="main-footer">
+                <p class="info-center">Copyright
+                &copy; 2021 Designed by Car
+                Shop</p>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>

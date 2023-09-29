@@ -1,0 +1,293 @@
+h1,p{
+    text-align: center;
+}
+img{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+header{
+    background-image:  linear-gradient(rgb(197, 141, 137), rgb(252, 232, 204));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+   }
+.header-info {
+    text-align: left;
+    color: rgb(219, 84, 75);
+    position: absolute;
+    left: 0;
+    padding: 0;
+    margin: 14-x 14px 0 14px;
+   }
+.header-info a {
+    padding: 0;
+    text-decoration: none;
+   }
+.header-info a:hover {
+    background-color: transparent
+   }
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+   }
+a {
+    text-decoration: none;
+    color: rgb(219, 84, 75);
+    padding: 5px;
+    float: left;
+   }
+a:hover {
+ background-color: burlywood;
+}
+.more{
+    margin-top: 5%;
+}
+h1, h2, h3, p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+h3, p {
+    text-align: center;
+    padding: 5px;
+    color: steelblue;
+   }
+.items {
+    display: flex;
+    justify-content: center;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    background-color: gainsboro;
+}
+.landscape {
+    width: 300px;
+    height: 200px;
+}
+img {
+    border: 20px solid rgb(59, 71, 226);
+    border-radius: 8px;
+    box-shadow:5px 5px 5px blue;
+    opacity: 0.2; 
+}
+img:hover{
+    opacity: 1;
+}
+body{
+    background-image: url("assets/sunset.jpeg");
+    background-size: cover;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+table, tr, th, td{
+    border: 5px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+th{
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+}
+tr, th, td{
+    width: 500px;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+.slideshow-container {
+    position: relative;
+  }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+.tab {
+    background-color: gainsboro;
+    width: 300px;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+   }
+   h1.name {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: black;
+   }
+   h2.price {
+    font-size: 38px;
+    color: black;
+   }
+   .list {
+    list-style-type: disc;
+    margin-bottom: 50px;
+    text-align: left;
+   }
+   .list li {
+    margin-top: 20px;
+    color: black;
+   }
+   hr {
+    height: 7px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(219, 84, 75);
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+   }   
+button {
+    background-color: rgb(219, 85, 75, 0.616);
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+    border: none;
+    font-size: 20pt;
+   }
+button:hover {
+    transform: scale(1.2, 1.2);
+    background-color: rgb(219, 85, 75);
+    cursor: pointer;
+   }
+   div.about {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: blanchedalmond;
+    width: 100%;
+   }
+   .about {
+    text-align: left;
+    color: black;
+    padding: 10px;
+
+    width: 100%;
+   }
+   div.image-about {
+    margin-bottom: auto;
+    margin-top: auto;
+   }
+   img.about-us {
+    width: 300px;
+   }
+ .dropdown  a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: gainsboro;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  footer {
+    background-image: linear-gradient(rgb(192, 192, 192),
+     rgb(30, 47, 206));
+   }
+   .main-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   }
+   .left-footer {
+    margin-right: auto;
+    margin-left: 40px;
+   }
+   .right-footer {
+    margin-left: auto;
+    margin-right: 40px;
+   }
+   .center-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+   }
+   .info-left {
+    color: rgb(253, 253, 253);
+    text-align: left;
+    width: 100%;
+   }
+   .info-right {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    width: 100%;
+   }
+   .info-center {
+    color: rgb(219, 84, 75);
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid rgb(146, 168, 133);
+   }
+   .fa-map, .fa-map-pin, .fa-address-book, .fa-phone, .fa-instagram {
+    margin: 6px;
+    color: rgb(78, 228, 115);
+   }
