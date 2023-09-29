@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="icons/css/all.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <img src="asset/img/header-icon.png" class="icon">
+        <h3 class="header-info">
+            <a href="index.html">I Code</a>
+        </h3>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="">Project 1</a>
+                    <a href="">Project 2</a>
+                </div>
+            </div>
+            <a href="">Contact</a>
+            <a href="">About Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="illustration">
+                <img src="asset/img/illustration.png" class="illustration-img" width="800px">
+            </div>
+            <div class="contact">
+                <img src="asset/img/avatar.png" class="profile-contact-img">
+                <h1>Contact Me</h1>
+                <p>Please feel free to contact me </p>
+                <h4>Your Information</h4>
+                <form action="https://formsubmit.co/9c6dbab6b9687268fba3b98fd49c620d" autocomplete="off" method="POST">
+                    <div class="form-container">
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="input-item" name="name" id="name" placeholder=" ">
+                                <label for="name" class="form-label">Name</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="input-item" name="city" id="city" placeholder=" ">
+                                <label for="city" class="form-label">City</label>
+                            </div>
+                        </div>
+
+                        <div class="input-container">
+                            <div class="icon">
+                                <i class="fas fa-envelope-open"></i>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" class="input-item" name="email" id="email" placeholder=" ">
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+                        </div>
+
+                        <div class="textarea-container">
+                            <div class="icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="form-textarea">
+                                <textarea type="text" name="message" id="message" class="textarea" cols="52" rows="8" placeholder=" "></textarea>
+                                <label for="message" class="form-label">Message</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" class="next">
+                    <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <img src="asset/img/avatar.png" alt="">
+                <h3> Message Sent </h3>
+                <p> Thank you for Submitting ! </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
